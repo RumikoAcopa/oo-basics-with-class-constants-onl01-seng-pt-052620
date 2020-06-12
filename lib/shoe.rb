@@ -6,10 +6,11 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-    if BRANDS.include? "Nike"
-    exclude? "Nike"
-  end
+    if BRANDS.include "Nike" << brand
+    # if BRANDS.include? "Nike"
+    # exclude? "Nike"
+  # end
+end
 
   def cobble
     puts "Your shoe is as good as new!"
